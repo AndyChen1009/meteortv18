@@ -188,6 +188,24 @@
       "searchable": 1,
       "changeable": 1,
       "playerType": 2
+    },
+    {
+      "key": "A",
+      "name": "请不要",
+      "type": 1,
+      "api": "1！"
+    },
+    {
+      "key": "B",
+      "name": "相信视频中",
+      "type": 1,
+      "api": "2！"
+    },
+    {
+      "key": "C",
+      "name": "任何广告！",
+      "type": 1,
+      "api": "3！"
     }
   ],
   "spider": "https://fm.t4tv.hz.cz/jar/custom_spider.jar;md5;ca7cf8ac2302fa00985a57e4e58124ab"
