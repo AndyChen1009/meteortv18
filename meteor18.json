@@ -172,6 +172,15 @@
       "playerType": 2
     },
     {
+      "key": "hsck.com",
+      "name": "黄色仓库",
+      "type": 1,
+      "api": "http://www.243333.xyz/api.php/provide/vod/",
+      "searchable": 1,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "MissAV",
       "name": "MissAV",
       "type": 3,
