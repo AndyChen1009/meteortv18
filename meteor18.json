@@ -2,7 +2,7 @@
   "sites": [
     {
       "key": "91md.me",
-      "name": "91国产",
+      "name": "✨91国产✨",
       "type": 1,
       "api": "http://91md.me/api.php/provide/vod/",
       "searchable": 1,
@@ -11,7 +11,7 @@
     },
     {
       "key": "Jable",
-      "name": "高清Jable",
+      "name": "💖高清Jable",
       "type": 3,
       "api": "csp_Jable",
       "searchable": 1,
@@ -19,8 +19,17 @@
       "playerType": 2
     },
     {
+      "key": "MissAV",
+      "name": "💖MissAV",
+      "type": 3,
+      "api": "csp_Miss",
+      "searchable": 1,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "gdlsp.com",
-      "name": "香奶儿资源",
+      "name": "😍香奶儿资源",
       "type": 0,
       "api": "https://www.gdlsp.com/api/xml.php",
       "searchable": 1,
@@ -29,7 +38,7 @@
     },
     {
       "key": "xrbsp.com",
-      "name": "淫水机资源",
+      "name": "😍淫水机资源",
       "type": 0,
       "api": "https://www.xrbsp.com/api/xml.php",
       "searchable": 1,
@@ -38,7 +47,7 @@
     },
     {
       "key": "afasu.com",
-      "name": "小湿妹资源",
+      "name": "😍小湿妹资源",
       "type": 0,
       "api": "https://www.afasu.com/api/xml.php",
       "searchable": 1,
@@ -47,7 +56,7 @@
     },
     {
       "key": "msnii.com",
-      "name": "美少女资源",
+      "name": "😍美少女资源",
       "type": 0,
       "api": "https://www.msnii.com/api/xml.php",
       "searchable": 1,
@@ -56,7 +65,7 @@
     },
     {
       "key": "kxgav.com",
-      "name": "白嫖资源",
+      "name": "😍白嫖资源",
       "type": 0,
       "api": "https://www.kxgav.com/api/xml.php",
       "searchable": 1,
@@ -64,17 +73,17 @@
       "playerType": 2
     },
     {
-      "key": "Hanime",
-      "name": "成人动漫",
-      "type": 3,
-      "api": "csp_Hanime",
+      "key": "hsck.net",
+      "name": "😍黄色仓库",
+      "type": 1,
+      "api": "http://www.243333.xyz/api.php/provide/vod/",
       "searchable": 1,
       "changeable": 1,
       "playerType": 2
     },
     {
       "key": "wmcj8.com",
-      "name": "无码JAV",
+      "name": "🌸无码JAV",
       "type": 0,
       "api": "http://wmcj8.com/inc/sapi.php",
       "searchable": 1,
@@ -83,7 +92,7 @@
     },
     {
       "key": "apilj.com",
-      "name": "中文成人1",
+      "name": "🍓中文成人1",
       "type": 1,
       "api": "http://apilj.com/api.php/provide/vod/at/json/",
       "searchable": 1,
@@ -92,7 +101,7 @@
     },
     {
       "key": "dadiapi.com",
-      "name": "中文成人2",
+      "name": "🍓中文成人2",
       "type": 0,
       "api": "http://dadiapi.com/api.php",
       "searchable": 1,
@@ -101,7 +110,7 @@
     },
     {
       "key": "mygzycj.com",
-      "name": "中文成人3",
+      "name": "🍓中文成人3",
       "type": 0,
       "api": "http://mygzycj.com/api.php?ac=list",
       "searchable": 1,
@@ -110,7 +119,7 @@
     },
     {
       "key": "api.maozyapi.com",
-      "name": "中文成人4",
+      "name": "🍓中文成人4",
       "type": 1,
       "api": "https://api.maozyapi.com/inc/apijson_vod.php",
       "searchable": 1,
@@ -119,7 +128,7 @@
     },
     {
       "key": "lbapi9.com",
-      "name": "中文成人5",
+      "name": "🍓中文成人5",
       "type": 1,
       "api": "https://lbapi9.com/api.php/provide/vod/",
       "searchable": 1,
@@ -128,7 +137,7 @@
     },
     {
       "key": "api.apilyzy.com",
-      "name": "中文成人6",
+      "name": "🍓中文成人6",
       "type": 1,
       "api": "https://api.apilyzy.com/api.php/provide/vod/",
       "searchable": 1,
@@ -136,8 +145,17 @@
       "playerType": 2
     },
     {
+      "key": "Hanime",
+      "name": "🖼️成人动漫",
+      "type": 3,
+      "api": "csp_Hanime",
+      "searchable": 1,
+      "changeable": 1,
+      "playerType": 2
+    },
+    {
       "key": "feifei67.com",
-      "name": "伦理片1",
+      "name": "🎞️伦理片1",
       "type": 1,
       "api": "http://www.feifei67.com/api.php/provide/vod/",
       "searchable": 1,
@@ -146,7 +164,7 @@
     },
     {
       "key": "bttcj.com",
-      "name": "伦理片2",
+      "name": "🎞️伦理片2",
       "type": 0,
       "api": "http://bttcj.com/inc/sapi.php",
       "searchable": 1,
@@ -155,7 +173,7 @@
     },
     {
       "key": "kkzy.me",
-      "name": "伦理片3",
+      "name": "🎞️伦理片3",
       "type": 1,
       "api": "https://kkzy.me/api.php/provide/vod/",
       "searchable": 1,
@@ -164,36 +182,9 @@
     },
     {
       "key": "shayuapi.com",
-      "name": "伦理片4",
+      "name": "🎞️伦理片4",
       "type": 1,
       "api": "https://shayuapi.com/api.php/provide/vod/",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "hsck.com",
-      "name": "黄色仓库",
-      "type": 1,
-      "api": "http://www.243333.xyz/api.php/provide/vod/",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "MissAV",
-      "name": "MissAV",
-      "type": 3,
-      "api": "csp_Miss",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "18AV",
-      "name": "18AV",
-      "type": 3,
-      "api": "csp_Eighteen",
       "searchable": 1,
       "changeable": 1,
       "playerType": 2
