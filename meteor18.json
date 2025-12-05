@@ -208,5 +208,5 @@
       "api": "3！"
     }
   ],
-  "spider": "https://github.com/FongMi/CatVodSpider/blob/main/jar/custom_spider.jar"
+  "spider": "https://fm.t4tv.hz.cz/jar/custom_spider.jar;md5;ca7cf8ac2302fa00985a57e4e58124ab"
 }
