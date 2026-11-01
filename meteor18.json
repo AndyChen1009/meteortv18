@@ -2,11 +2,11 @@
   "_meta": {
     "note": "FongMi/TV 配置。v3 在 v2 基础上加入 jable.tv 与 missav.ai。jable.tv 走 jar 内 csp_Jable（域名原生匹配）；missav.ai 走 jar 内 csp_Miss，并把该 jar 里的 missav.com 域名等长改写为 missav.ai（见 spider 指向的 meteor18.ai.jar）。",
     "source": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/main/meteor18.json",
-    "spider_md5": "d4a021dd56c583680469cdbdbb1b0897",
-    "spider_note": "meteor18.ai.jar = meteor18.jar + 原地缩短 dex 字符串（missav.com -> missav.ai），dex header 的 SHA-1 与 adler32 已按正确顺序重算并自校验通过",
+    "spider_md5": "7751ab5675370251ec75b701aafa6f1c",
+    "spider_note": "回退到原 meteor18.jar（实测可被 com.fongmi.android.tv18 加载）。meteor18.ai.jar（域名改写版）在该客户端抛 ClassNotFoundException，暂不使用",
     "checked_at": "2026-11-01"
   },
-  "spider": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/refs/heads/main/meteor18.ai.jar;md5;d4a021dd56c583680469cdbdbb1b0897",
+  "spider": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/refs/heads/main/meteor18.jar;md5;7751ab5675370251ec75b701aafa6f1c",
   "flags": [
     "youku", "qq", "iqiyi", "qiyi", "letv", "sohu", "tudou", "pptv",
     "le", "mgtv", "wasu", "bilibili", "renrenmi"
