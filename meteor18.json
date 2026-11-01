@@ -127,4 +127,6 @@
     { "key": "bttcj.com", "reason": "HTTP 404" },
     { "key": "xrbsp.com", "reason": "搜索返回空，根接口无分类节点" },
     { "key": "msnii.com", "reason": "根接口无分类节点，仅列表" },
-    { "key": "A/B/C", "reason": "原作者防屏蔽水印伪站点，api 为非法全角字符串"
+    { "key": "A/B/C", "reason": "原作者防屏蔽水印伪站点，api 为非法全角字符串" }
+  ]
+}
