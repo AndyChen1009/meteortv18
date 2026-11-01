@@ -1,212 +1,111 @@
 {
+  "_meta": {
+    "note": "FongMi/TV 原生适配版。原文件 meteor18.json 修正而来：spider 补 md5、dadiapi 的 type 由 1 改 0、剔除已失效站点并归档到 _disabled_sites、补 filterable/quickSearch/timeout/header、加 doh 与 flags。",
+    "source": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/main/meteor18.json",
+    "spider_md5": "7751ab5675370251ec75b701aafa6f1c",
+    "checked_at": "2026-11-01"
+  },
+  "spider": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/refs/heads/main/meteor18.jar;md5;7751ab5675370251ec75b701aafa6f1c",
+  "flags": [
+    "youku", "qq", "iqiyi", "qiyi", "letv", "sohu", "tudou", "pptv",
+    "le", "mgtv", "wasu", "bilibili", "renrenmi"
+  ],
+  "doh": [
+    { "name": "Cloudflare", "url": "https://cloudflare-dns.com/dns-query", "ips": ["1.1.1.1", "1.0.0.1"] },
+    { "name": "Google", "url": "https://dns.google/dns-query", "ips": ["8.8.8.8", "8.8.4.4"] }
+  ],
+  "headers": [
+    { "host": "jable.tv", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://jable.tv/" } },
+    { "host": "missav.com", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://missav.com/" } },
+    { "host": "hanime1.me", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://hanime1.me/" } }
+  ],
   "sites": [
     {
-      "key": "91md.me",
+      "key": "91md",
       "name": "✨91国产✨",
       "type": 1,
       "api": "http://91md.me/api.php/provide/vod/",
       "searchable": 1,
       "changeable": 1,
-      "playerType": 2
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "key": "Jable",
-      "name": "💖高清Jable",
-      "type": 3,
-      "api": "csp_Jable",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "MissAV",
-      "name": "💖MissAV",
-      "type": 3,
-      "api": "csp_Miss",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "gdlsp.com",
-      "name": "😍香奶儿资源",
-      "type": 0,
-      "api": "https://www.gdlsp.com/api/xml.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "xrbsp.com",
-      "name": "😍淫水机资源",
-      "type": 0,
-      "api": "https://www.xrbsp.com/api/xml.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "afasu.com",
-      "name": "😍小湿妹资源",
-      "type": 0,
-      "api": "https://www.afasu.com/api/xml.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "msnii.com",
-      "name": "😍美少女资源",
-      "type": 0,
-      "api": "https://www.msnii.com/api/xml.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "kxgav.com",
-      "name": "😍白嫖资源",
-      "type": 0,
-      "api": "https://www.kxgav.com/api/xml.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "hsck.net",
-      "name": "😍黄色仓库",
-      "type": 1,
-      "api": "http://www.243333.xyz/api.php/provide/vod/",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "wmcj8.com",
-      "name": "🌸无码JAV",
-      "type": 0,
-      "api": "http://wmcj8.com/inc/sapi.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "apilj.com",
+      "key": "apilj",
       "name": "🍓中文成人1",
       "type": 1,
       "api": "http://apilj.com/api.php/provide/vod/at/json/",
       "searchable": 1,
       "changeable": 1,
-      "playerType": 2
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "key": "dadiapi.com",
-      "name": "🍓中文成人2",
-      "type": 0,
-      "api": "http://dadiapi.com/api.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "mygzycj.com",
-      "name": "🍓中文成人3",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "api.maozyapi.com",
-      "name": "🍓中文成人4",
-      "type": 1,
-      "api": "https://api.maozyapi.com/inc/apijson_vod.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "lbapi9.com",
+      "key": "lbapi9",
       "name": "🍓中文成人5",
       "type": 1,
       "api": "https://lbapi9.com/api.php/provide/vod/",
       "searchable": 1,
       "changeable": 1,
-      "playerType": 2
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "key": "api.apilyzy.com",
-      "name": "🍓中文成人6",
-      "type": 1,
-      "api": "https://api.apilyzy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "Hanime",
-      "name": "🖼️成人动漫",
-      "type": 3,
-      "api": "csp_Hanime",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "feifei67.com",
-      "name": "🎞️伦理片1",
-      "type": 1,
-      "api": "http://www.feifei67.com/api.php/provide/vod/",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "bttcj.com",
-      "name": "🎞️伦理片2",
-      "type": 0,
-      "api": "http://bttcj.com/inc/sapi.php",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "kkzy.me",
-      "name": "🎞️伦理片3",
-      "type": 1,
-      "api": "https://kkzy.me/api.php/provide/vod/",
-      "searchable": 1,
-      "changeable": 1,
-      "playerType": 2
-    },
-    {
-      "key": "shayuapi.com",
+      "key": "shayuapi",
       "name": "🎞️伦理片4",
       "type": 1,
       "api": "https://shayuapi.com/api.php/provide/vod/",
       "searchable": 1,
       "changeable": 1,
-      "playerType": 2
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "key": "A",
-      "name": "请不要",
-      "type": 1,
-      "api": "1！"
+      "key": "dadiapi",
+      "name": "🍓中文成人2",
+      "type": 0,
+      "api": "http://dadiapi.com/api.php",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
     },
     {
-      "key": "B",
-      "name": "相信视频中",
-      "type": 1,
-      "api": "2！"
+      "key": "gdlsp",
+      "name": "😍香奶儿资源（仅搜索）",
+      "type": 0,
+      "api": "https://www.gdlsp.com/api/xml.php",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "timeout": 20
     },
     {
-      "key": "C",
-      "name": "任何广告！",
-      "type": 1,
-      "api": "3！"
+      "key": "kxgav",
+      "name": "😍白嫖资源（仅搜索）",
+      "type": 0,
+      "api": "https://www.kxgav.com/api/xml.php",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "timeout": 20
     }
   ],
-  "spider": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/refs/heads/main/meteor18.jar"
+  "_disabled_sites": [
+    { "key": "Jable", "reason": "jable.tv 返回 HTTP 403（CF/地区封锁），csp_Jable 域名写死不可 ext 覆盖" },
+    { "key": "MissAV", "reason": "missav.com 已被接管为 ThisAV，任意路径返回同一页面，csp_Miss 解析必错" },
+    { "key": "Hanime", "reason": "hanime1.me 返回 HTTP 403" },
+    { "key": "hsck.net", "reason": "domain parked 到 hao123 停放页" },
+    { "key": "wmcj8.com", "reason": "TLS 证书不受信任" },
+    { "key": "afasu.com", "reason": "TLS 握手失败" },
+    { "key": "api.maozyapi.com", "reason": "HTTP 523" },
+    { "key": "api.apilyzy.com", "reason": "TLS 连接失败" },
+    { "key": "kkzy.me", "reason": "HTTP 429 限流" },
+    { "key": "feifei67.com", "reason": "返回 Loading... JS 跳转页" },
+    { "key": "mygzycj.com", "reason": "JS 跳转页 + api 自带 ac=list 与宿主 ac 参数冲突" },
+    { "key": "bttcj.com", "reason": "HTTP 404" },
+    { "key": "xrbsp.com", "reason": "搜索返回空，根接口无分类节点" },
+    { "key": "msnii.com", "reason": "根接口无分类节点，仅列表" },
+    { "key": "A/B/C", "reason": "原作者防屏蔽水印伪站点，api 为非法全角字符串" }
+  ]
 }
