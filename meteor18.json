@@ -1,11 +1,12 @@
 {
   "_meta": {
-    "note": "FongMi/TV 原生适配版。原文件 meteor18.json 修正而来：spider 补 md5、dadiapi 的 type 由 1 改 0、剔除已失效站点并归档到 _disabled_sites、补 filterable/quickSearch/timeout/header、加 doh 与 flags。",
+    "note": "FongMi/TV 配置。v3 在 v2 基础上加入 jable.tv 与 missav.ai。jable.tv 走 jar 内 csp_Jable（域名原生匹配）；missav.ai 走 jar 内 csp_Miss，并把该 jar 里的 missav.com 域名等长改写为 missav.ai（见 spider 指向的 meteor18.ai.jar）。",
     "source": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/main/meteor18.json",
-    "spider_md5": "7751ab5675370251ec75b701aafa6f1c",
+    "spider_md5": "2ff720cee478f9f800092c4f157accb2",
+    "spider_note": "meteor18.ai.jar = meteor18.jar + 域名替换（missav.com -> missav.ai），已重算 dex adler32/SHA-1",
     "checked_at": "2026-11-01"
   },
-  "spider": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/refs/heads/main/meteor18.jar;md5;7751ab5675370251ec75b701aafa6f1c",
+  "spider": "https://raw.githubusercontent.com/AndyChen1009/meteortv18/refs/heads/main/meteor18.ai.jar;md5;2ff720cee478f9f800092c4f157accb2",
   "flags": [
     "youku", "qq", "iqiyi", "qiyi", "letv", "sohu", "tudou", "pptv",
     "le", "mgtv", "wasu", "bilibili", "renrenmi"
@@ -16,10 +17,32 @@
   ],
   "headers": [
     { "host": "jable.tv", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://jable.tv/" } },
-    { "host": "missav.com", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://missav.com/" } },
-    { "host": "hanime1.me", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://hanime1.me/" } }
+    { "host": "missav.ai", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://missav.ai/" } },
+    { "host": "fourhoi.com", "header": { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36", "Referer": "https://missav.ai/" } }
   ],
   "sites": [
+    {
+      "key": "jable",
+      "name": "💖Jable",
+      "type": 3,
+      "api": "csp_Jable",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
+    {
+      "key": "missav",
+      "name": "💖MissAV",
+      "type": 3,
+      "api": "csp_Miss",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 30
+    },
     {
       "key": "91md",
       "name": "✨91国产✨",
@@ -92,9 +115,7 @@
     }
   ],
   "_disabled_sites": [
-    { "key": "Jable", "reason": "jable.tv 返回 HTTP 403（CF/地区封锁），csp_Jable 域名写死不可 ext 覆盖" },
-    { "key": "MissAV", "reason": "missav.com 已被接管为 ThisAV，任意路径返回同一页面，csp_Miss 解析必错" },
-    { "key": "Hanime", "reason": "hanime1.me 返回 HTTP 403" },
+    { "key": "Hanime", "reason": "hanime1.me 返回 HTTP 403，csp_Hanime 域名写死不可 ext 覆盖" },
     { "key": "hsck.net", "reason": "domain parked 到 hao123 停放页" },
     { "key": "wmcj8.com", "reason": "TLS 证书不受信任" },
     { "key": "afasu.com", "reason": "TLS 握手失败" },
@@ -106,6 +127,4 @@
     { "key": "bttcj.com", "reason": "HTTP 404" },
     { "key": "xrbsp.com", "reason": "搜索返回空，根接口无分类节点" },
     { "key": "msnii.com", "reason": "根接口无分类节点，仅列表" },
-    { "key": "A/B/C", "reason": "原作者防屏蔽水印伪站点，api 为非法全角字符串" }
-  ]
-}
+    { "key": "A/B/C", "reason": "原作者防屏蔽水印伪站点，api 为非法全角字符串"
